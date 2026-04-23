@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieSpace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container header__inner">
+        <a class="logo" href="#top">MovieSpace</a>
+        <nav class="nav" aria-label="Основная навигация">
+            <ul class="nav__list">
+                <li><a href="#genres">Жанры</a></li>
+                <li><a href="#movies">Фильмы</a></li>
+                <li><a href="#about">О сайте</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="top">
+    <section class="hero">
+        <div class="container hero__content">
+            <p class="hero__eyebrow"><span>Онлайн-подборка</span> для вечернего просмотра</p>
+            <h1>Мир кино в одном месте</h1>
+            <p class="hero__text">
+                Подбирай фильмы по настроению, жанру и атмосфере. <strong>MovieSpace</strong>
+                помогает быстро найти, <em>что посмотреть сегодня</em>, не тратя время на долгие поиски.
+            </p>
+            <div class="hero__actions">
+                <a href="#movies" class="btn">Смотреть фильмы</a>
+                <a href="#contact" class="btn btn--ghost">Оформить подписку</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="genres" class="genres">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-heading__label">Каталог</p>
+                <h2>Популярные жанры</h2>
+            </div>
+            <ul class="genre-list">
+                <li>Боевик</li>
+                <li>Комедия</li>
+                <li>Драма</li>
+                <li>Фантастика</li>
+                <li>Триллер</li>
+                <li>Приключения</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="movies" class="movies">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-heading__label">Подборка</p>
+                <h2>Фильмы, с которых удобно начать</h2>
+            </div>
+            <div class="movie-grid">
+                <article class="movie-card">
+                    <img src="img/movie1.jpg" alt="Постер фильма Аватар">
+                    <div class="movie-card__body">
+                        <p class="movie-card__genre">Фантастика / Приключения</p>
+                        <h3>Аватар</h3>
+                        <p>
+                            Масштабный фильм о необычном мире Пандоры, противостоянии людей и природы
+                            и выборе между долгом, интересом и новой жизнью.
+                        </p>
+                        <a href="#contact" class="card-link">Хочу похожие фильмы</a>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <img src="img/movie2.jpg" alt="Постер фильма Титаник">
+                    <div class="movie-card__body">
+                        <p class="movie-card__genre">Драма / Мелодрама</p>
+                        <h3>Титаник</h3>
+                        <p>
+                            История любви двух людей из разных социальных слоев на фоне катастрофы,
+                            которая делает фильм одновременно зрелищным и эмоциональным.
+                        </p>
+                        <a href="#contact" class="card-link">Получить рекомендацию</a>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <img src="img/movie3.jpg" alt="Постер фильма Мстители">
+                    <div class="movie-card__body">
+                        <p class="movie-card__genre">Боевик / Фантастика</p>
+                        <h3>Мстители</h3>
+                        <p>
+                            Динамичный супергеройский фильм, где команда героев объединяется ради
+                            общей цели, а зритель получает масштабные сцены и яркий экшен.
+                        </p>
+                        <a href="#contact" class="card-link">Подобрать еще</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container about__grid">
+            <div>
+                <div class="section-heading">
+                    <p class="section-heading__label">О проекте</p>
+                    <h2>Сайт для любителей кино</h2>
+                </div>
+                <p class="about__text">
+                    Этот сайт помогает быстро познакомиться с фильмами разных жанров и выбрать
+                    подходящую картину для отдыха, вдохновения или обсуждения с друзьями.
+                </p>
+            </div>
+            <div class="about__card">
+                <h3>Что уже можно сделать</h3>
+                <ul class="about__list">
+                    <li>перейти к нужному разделу через меню</li>
+                    <li>посмотреть карточки фильмов</li>
+                    <li>выбрать любимый жанр</li>
+                    <li>оставить заявку на персональную подборку</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container contact__grid">
+            <div class="contact__intro">
+                <div class="section-heading">
+                    <p class="section-heading__label">Подписка</p>
+                    <h2>Получить персональную подборку</h2>
+                </div>
+                <p>
+                    Оставь контакты и выбери жанр. Так можно показать на защите не только верстку,
+                    но и работу формы с валидацией и интерактивными состояниями.
+                </p>
+            </div>
+
+            <form class="form" action="#" method="post">
+                <div class="form__group">
+                    <label for="name">Имя</label>
+                    <input id="name" name="name" type="text" placeholder="Например, Никита" minlength="2" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="name@example.com" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="genre">Любимый жанр</label>
+                    <select id="genre" name="genre" required>
+                        <option value="" selected disabled>Выберите жанр</option>
+                        <option value="action">Боевик</option>
+                        <option value="comedy">Комедия</option>
+                        <option value="drama">Драма</option>
+                        <option value="fantasy">Фантастика</option>
+                        <option value="thriller">Триллер</option>
+                    </select>
+                </div>
+
+                <div class="form__group">
+                    <label for="message">Пожелания</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Например: хочу что-то динамичное и не слишком длинное"></textarea>
+                </div>
+
+                <button type="submit" class="btn form__submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <p>© 2026 MovieSpace</p>
+        <a href="mailto:moviespace@example.com">moviespace@example.com</a>
+    </div>
+</footer>
+</body>
+</html>
